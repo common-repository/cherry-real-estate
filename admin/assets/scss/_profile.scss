@@ -1,0 +1,23 @@
+#_tm_property_agent_contacts,
+#_tm_property_agent_socials {
+	.icon-wrap,
+	.label-wrap,
+	.value-wrap {
+		display: inline-block;
+
+		box-sizing: border-box;
+
+		vertical-align: top;
+	}
+	.icon-wrap {
+		width: 18%;
+	}
+	.label-wrap,
+	.value-wrap {
+		width: 41%;
+		padding: 0 0 0 10px;
+	}
+	.cherry-ui-iconpicker-group {
+		max-width: inherit;
+	}
+}

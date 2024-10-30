@@ -1,0 +1,95 @@
+// Properties list
+.tm-property {
+	&-items {
+		.tm-property--agent & {
+			margin-top: $gap-size;
+		}
+	}
+	&__item {
+		&:not(:first-child) {
+			margin: $gap-size 0 0;
+		}
+	}
+	&__status {
+		display: inline-block;
+
+		margin: 0 0 $gap-size / 4;
+		padding: 5px 10px;
+
+		font-size: .75em;
+
+		vertical-align: middle;
+
+		color: $white;
+		background-color: $black;
+	}
+	&__image {
+		margin: 0 0 $gap-size / 2;
+	}
+	&__area,
+	&__bedrooms {
+		margin: 0 $gap-size / 2 0 0;
+	}
+	&__area,
+	&__bedrooms,
+	&__bathrooms {
+		font-size: .75em;
+	}
+	&__title {
+		margin: $gap-size / 2 0;
+	}
+	&__more {
+		margin: $gap-size / 2 0 0;
+	}
+	// Grid layout
+	&__wrap {
+		&.grid {
+			@media (min-width: 1200px) {
+				display: flex;
+
+				margin-right: $gap-size / -2;
+				margin-left: $gap-size / -2;
+
+				flex-wrap: wrap;
+				.tm-property__item {
+					max-width: 50%;
+					margin: $gap-size 0 0;
+					padding-right: $gap-size / 2;
+					padding-left: $gap-size / 2;
+
+					flex: 1 0 50%;
+					&:nth-child(-n+2) {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Properties control
+.tm-re_listing-controls {
+	margin-bottom: $gap-size;
+	.tm-re-property-sort,
+	.tm-re-switch-layout {
+		width: 50%;
+	}
+	.tm-re-property-sort {
+		float: left;
+
+		padding-right: $gap-size / 2;
+	}
+	.tm-re-switch-layout {
+		float: right;
+
+		text-align: right;
+	}
+	&:after {
+		display: block;
+		clear: both;
+
+		width: 100%;
+
+		content: '';
+	}
+}

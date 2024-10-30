@@ -1,0 +1,21 @@
+// Single gallery
+.tm-property-gallery {
+	&--thumbs {
+		box-sizing: border-box;
+		padding: $gap-size / 4 0;
+	}
+	&__thumbs {
+		&-item {
+			width: 18%;
+
+			cursor: pointer;
+			transition: 333ms opacity;
+
+			opacity: .4;
+			&.swiper-slide-active,
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
